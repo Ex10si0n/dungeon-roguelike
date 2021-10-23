@@ -1,20 +1,23 @@
 import random
+import os
 import npc
 from maze import generate
 
 class Map:
-    def __init__(self):
+    def __init__(self, level):
         self.x, self.y = 5, 5
-        self.enemies = npc.generate_enemies()
+        self.enemies = npc.generate_enemies(level=level)
         self.map = generate(self.x, self.y)
         self.display_enemies()
         self.add_room()
-        self.add_enimies(level=1)
+        self.add_enemies()
         self.add_chest()
         self.add_merchant()
         self.render()
         self.map[1][1] = 's'
         self.map[len(self.map)-2][len(self.map)-2] = 'e'
+        self.display()
+
 
     def display_enemies(self):
         for i in range(len(self.enemies)):
@@ -45,7 +48,7 @@ class Map:
                     if i == corner_x + room_size and j == corner_y - 1: self.map[i][j] = 'X'
                     if i == corner_x + room_size and j == corner_y + room_size: self.map[i][j] = 'X'
 
-    def add_enimies(self, level):
+    def add_enemies(self):
         enemies = []
         for e in self.enemies:
             enemies.append(e)
@@ -82,10 +85,13 @@ class Map:
 
 
     def display(self):
-        for i in self.map:
-            for j in i:
-                print(j, end=' ')
+        os.system('clear')
+        self.display_enemies()
+        for i in range(len(self.map)):
+            for j in range(len(self.map)):
+                print(self.map[j][i], end=' ')
             print()
+
 
     def render(self):
         for i in range(len(self.map)):
@@ -95,5 +101,11 @@ class Map:
 
 
 if __name__ == '__main__':
-    m = Map()
+    m = Map(level=1)
+    m.display()
+    m = Map(level=2)
+    m.display()
+    m = Map(level=3)
+    m.display()
+    m = Map(level=4)
     m.display()
