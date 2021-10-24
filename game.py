@@ -4,6 +4,9 @@ from pyglet.window import key
 from map import *
 from npc import *
 
+bgm_url = "assets/bgm.mp3"
+bgm = pyglet.media.load(bgm_url, streaming=False)
+bgm.play()
 
 class Player:
     hp = 20
