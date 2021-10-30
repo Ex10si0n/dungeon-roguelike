@@ -4,7 +4,7 @@ This Rougelike game is developed by **Steve Yan (P1908326)** for the intention o
 
 ## Characters
 
-The game is themed on dungeon adventure. Player (act as the King![king](/Users/ex10si0n/Desktop/Roguelike/assets/king.png)) can break the wooden wall, beat the enimies (![elf](/Users/ex10si0n/Desktop/Roguelike/assets/elf.png), ![goblin](/Users/ex10si0n/Desktop/Roguelike/assets/ghost.png), ![goblin](/Users/ex10si0n/Desktop/Roguelike/assets/goblin.png)) and the boss![boss](/Users/ex10si0n/Desktop/Roguelike/assets/boss.png) as well as gain some enhancement from the chests ![chest](/Users/ex10si0n/Desktop/Roguelike/assets/chest.png)or the merchants![merchant](/Users/ex10si0n/Desktop/Roguelike/assets/merchant.png).
+The game is themed on dungeon adventure. Player (act as the King![king](./assets/king.png)) can break the wooden wall, beat the enimies (![elf](./assets/elf.png), ![goblin](./assets/ghost.png), ![goblin](./assets/goblin.png)) and the boss![boss](./assets/boss.png) as well as gain some enhancement from the chests ![chest](./assets/chest.png)or the merchants![merchant](./assets/merchant.png).
 
 ## Player Properties
 
