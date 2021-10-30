@@ -111,6 +111,10 @@ level = pyglet.text.Label('LEVEL: ' + str(Player.level),
                           font_size=12,
                           x=window.width - 100, y=window.height - 20)
 
+copyright = pyglet.text.Label('P1908326',
+                          font_name='Arial',
+                          font_size=16,
+                          x=window.width - 200, y=window.height - 200)
 
 king = pyglet.resource.image('assets/king.png')
 wall = pyglet.resource.image('assets/wall.png')
@@ -284,6 +288,7 @@ def on_draw():
             dmg.draw()
             level.text = 'LEVEL: ' + str(Player.level)
             level.draw()
+            copyright.draw()
             info1.draw()
             info2.draw()
             px = Player.player_x * 40
@@ -318,6 +323,6 @@ def on_draw():
         pass
 
 
-    
+
 
 pyglet.app.run()
