@@ -1,8 +1,10 @@
 # Untitled Roguelike Game
 
+For how to play, see [Guideline](./Guideline.md)
+
 ## Download
 
-
+Release: [here](https://github.com/Ex10si0n/Roguelike/releases/tag/0.1)
 
 ## Screenshots
 
