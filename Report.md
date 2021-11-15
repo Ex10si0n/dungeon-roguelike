@@ -18,7 +18,7 @@ Moreover, there are some requirements that Professor provided. For a clear refer
 | ☑️      | Any platforms like mobile or flash is acceptable.            | PC (.exe) / Linux and macOS (run from source code)           |
 | ☑️      | The game should not have bugs.                               | Not bugs  🐛                                                  |
 | ☑️      | In the game interface design, you need to deal with the design issues with knowledge learned. For example, you need to test the tonal contrast. |                                                              |
-| ☑️      | You need to submit a report stating the design issues (which covered in Chapter 1) you encountered. | Right here 😀                                                 |
+| ☑️      | You need to submit a report stating the design issues (which covered in Chapter 1) you encountered. |                                                              |
 | ☑️      | The game should be deployed, do not simply submit the source code. | Both **src** and click-to-play **exe** is available.         |
 | ☑️      | For game that requires plug-ins, you need to submit the plug-ins together with installation instruction written in readme.txt. | No plugins needed.                                           |
 | ☑️      | Guideline for playing the game should be given               | [Guideline.md](Guildeline.md)                                |
@@ -92,6 +92,26 @@ drwxr-xr-x     - ex10si0n 24 Oct 18:27  screenshots/
 .rw-r--r--    15 ex10si0n 23 Oct 15:36  requirement.txt
 ```
 
+#### **[**Issue#3**]** (Color&Tone) Hue and brightness need to be modified when the same color is placed against different backgrounds
+
+Although the assets have a border to avoid the color issue when adopting different background color (i.e.![elf](./assets/elf.png), it has the black border). If the background is black, just like my game, the border does not work well with the background due to the same color adopted.
+
+#### **[**Issue#4**]** (Layout Grids) The text does not aligned well with layout grids
+
+A layout grid is a geometrical division of the page that can be used to structure the placement of text blocks and images. Alignment can give an appearance of coherence and visual order to a Web page or multimedia interface. The game does not contains a layout girds system. It should be designed and each elements should fit the yellow box. The game map should have a margin leave blank ![](./screenshots/S3-Layout.png)
+
+The interface should be optimized by adopting the layout gird and it looks nicer. ![](./screenshots/S3s.png)
+
+#### **[**Issue#5**]** (Semiotics) Using symbols instead of boring words
+
+In the game, users are not easy to recognize the four attributes of player: `HP`, `ATK`, `COIN`, and `AXE`. Instead, if change it to corresponding symbol, it will be vivid and easy to understand by users.
+
+![](screenshots/S4s.png)
+
+#### **[**Issue#6**]** (Gestalt Principle) Law of Proximity 
+
+The boss in each levels is ![boss](./assets/boss.png), but the same size of other enemies and the boss which does not have a obvious warning or mention to the player that the boss will be met in front. Instead, it should be displayed at a larger size to show the unique boss in each levels.
+
 ### Tonal Contrast Test
 
 Here are the effects during the test.
@@ -112,7 +132,7 @@ We can see that the image is also recognizable while in grayscale format. Hence,
 
 ### Improvements
 
-After recognizing two design issues. This project should be improved in several aspects.
+This project should be improved in several aspects.
 
 #### Code refactor
 
